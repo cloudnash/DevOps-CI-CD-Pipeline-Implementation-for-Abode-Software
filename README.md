@@ -160,3 +160,36 @@ git checkout master
 git merge develop
 git push origin master
 ```
+
+
+**📁 Repository Structure**
+---
+```
+abode-software-devops-pipeline/
+│
+├── README.md                          # This file
+├── Jenkinsfile                        # CI/CD pipeline definition
+├── Dockerfile                         # Container configuration
+│
+├── ansible/                           # Infrastructure automation
+│   ├── inventory/
+│   │   └── hosts.ini                 # Server inventory
+│   ├── playbooks/
+│   │   ├── setup.yml                 # Main setup playbook
+│   │   ├── jenkins.yml               # Jenkins installation
+│   │   └── docker.yml                # Docker installation
+│   └── roles/                        # Reusable roles
+│
+├── scripts/                          # Helper scripts
+│   ├── deploy.sh                    # Deployment script
+│   ├── test.sh                      # Test execution script
+│   └── cleanup.sh                   # Cleanup script
+│
+├── tests/                           # Test files
+│   └── run-tests.sh                # Test runner
+│
+└── docs/                            # Documentation
+    ├── installation.md              # Setup guide
+    ├── pipeline-explained.md        # Pipeline details
+    └── images/                      # Diagrams and screenshots
+```
