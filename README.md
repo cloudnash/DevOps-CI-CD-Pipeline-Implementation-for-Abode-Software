@@ -108,3 +108,55 @@ Abode Software needed to:
 4. ✅ Job 3: Deploy to Production
 5. 🎉 Live on Production Server
 ```
+
+
+**⚡ Quick Start Guide**
+---
+
+- Step 1: Setup Infrastructure with Ansible
+```
+bash# Install Ansible
+sudo apt update && sudo apt install ansible -y
+
+# Run infrastructure setup
+cd ansible
+ansible-playbook -i inventory/hosts.ini playbooks/setup.yml
+```
+- Step 2: Configure Jenkins
+```
+bash# Access Jenkins
+http://your-jenkins-server:8080
+
+# Install Required Plugins:
+- Git Plugin
+- Docker Pipeline Plugin
+- GitHub Integration Plugin
+
+# Add Credentials:
+- GitHub Personal Access Token
+- Docker Hub Credentials
+```
+- Step 3: Create Jenkins Pipeline
+-- New Item → Pipeline
+-- Configure GitHub webhook: http://jenkins-server:8080/github-webhook/
+-- Pipeline script from SCM → Select this repository
+-- Save and test with a push
+
+- Step 4: Test the Pipeline
+- 
+```
+bash# Clone the application
+git clone https://github.com/hshar/website.git
+cd website
+
+# Make a change and push to develop (test only)
+git checkout develop
+echo "Test change" >> README.md
+git commit -am "test: trigger pipeline"
+git push origin develop
+
+# Push to master (full deployment)
+git checkout master
+git merge develop
+git push origin master
+```
