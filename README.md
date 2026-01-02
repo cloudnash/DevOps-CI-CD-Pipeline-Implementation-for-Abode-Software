@@ -137,13 +137,13 @@ http://your-jenkins-server:8080
 - Docker Hub Credentials
 ```
 - Step 3: Create Jenkins Pipeline
--- New Item → Pipeline
--- Configure GitHub webhook: http://jenkins-server:8080/github-webhook/
--- Pipeline script from SCM → Select this repository
--- Save and test with a push
+  
+  - New Item → Pipeline
+  - Configure GitHub webhook: http://jenkins-server:8080/github-webhook/
+  - Pipeline script from SCM → Select this repository
+  - Save and test with a push
 
 - Step 4: Test the Pipeline
-- 
 ```
 bash# Clone the application
 git clone https://github.com/hshar/website.git
