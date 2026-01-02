@@ -193,3 +193,17 @@ abode-software-devops-pipeline/
     ├── pipeline-explained.md        # Pipeline details
     └── images/                      # Diagrams and screenshots
 ```
+
+**🛠️ Technologies Used*
+---
+
+```
+| Technology | Purpose           | Version |
+| ---------- | ----------------- | ------- |
+| Jenkins    | CI/CD Automation  | 2.400+  |
+| Docker     | Containerization  | 24.0+   |
+| Ansible    | Config Management | 2.9+    |
+| Git/GitHub | Version Control   | —       |
+| Bash       | Scripting         | —       |
+| Groovy     | Jenkins Pipelines | —       |
+```
