@@ -24,6 +24,8 @@ f. Key Features
 g. Results & Impact
 
 
+
+
 **🎯Project Overview**
 
 As a Senior DevOps Engineer at Abode Software, I implemented a complete CI/CD pipeline that automates the entire software delivery process. This project demonstrates:
@@ -39,5 +41,5 @@ As a Senior DevOps Engineer at Abode Software, I implemented a complete CI/CD pi
 ✅ Zero-downtime deployments
 
 
-Application Repository: hshar/website
+Application Repository: [hshar/website](https://github.com/hshar/website.git)
 Container Base Image: hshar/webapp
