@@ -234,62 +234,62 @@ abode-software-devops-pipeline/
   - 🐛 Bug Detection: 70% faster with automated testing
   -  ⚡ Mean Time to Recovery: Improved by 60%
 
-Quality Metrics
+- Quality Metrics
+  - ✅ Test Automation: 100% of deployments tested
+  - 🔒 Failed Deployments: Reduced by 85%
+  - 📈 Code Quality: Consistent quality gates
+  - 🎯 Production Incidents: Decreased by 65%
 
-✅ Test Automation: 100% of deployments tested
-🔒 Failed Deployments: Reduced by 85%
-📈 Code Quality: Consistent quality gates
-🎯 Production Incidents: Decreased by 65%
+- Business Value
+  - 💰 Cost Savings: Reduced manual effort by 20 hours/week
+  - 📦 Faster Releases: Deploy features 10x faster
+  - 😊 Developer Satisfaction: Automated mundane tasks
+  - 🔄 Rollback Capability: Can rollback in < 2 minutes
 
-Business Value
+*🎓 What I Learned*
+---
 
-💰 Cost Savings: Reduced manual effort by 20 hours/week
-📦 Faster Releases: Deploy features 10x faster
-😊 Developer Satisfaction: Automated mundane tasks
-🔄 Rollback Capability: Can rollback in < 2 minutes
+- This project taught me:
+  - How to design branch-based deployment strategies
+  - Jenkins pipeline scripting with Groovy
+  - Docker containerization best practices
+  - Ansible automation for infrastructure
+  - CI/CD pipeline optimization techniques
+  - Production deployment safety measures
 
-🎓 What I Learned
-This project taught me:
+*🔧 Pipeline Configuration Details*
+---
 
-How to design branch-based deployment strategies
-Jenkins pipeline scripting with Groovy
-Docker containerization best practices
-Ansible automation for infrastructure
-CI/CD pipeline optimization techniques
-Production deployment safety measures
+- Jenkins Pipeline Jobs
+  - Job 1: BUILD
+    - Checkout code from GitHub
+    - Build Docker image with application
+    - Tag image with build number
+    - Push to Docker Hub
 
-🔧 Pipeline Configuration Details
-Jenkins Pipeline Jobs
-Job 1: BUILD
+  - Job 2: TEST
+    - Pull Docker image
+    - Run automated test suite
+    - Generate test reports
+    - Fail pipeline if tests fail
+  
+  - Job 3: PROD (Master branch only)
+    - Pull tested Docker image
+    - Deploy to production server
+    - Run health checks
+    - Confirm deployment success
 
-Checkout code from GitHub
-Build Docker image with application
-Tag image with build number
-Push to Docker Hub
+*🚦 Prerequisites*
+---
 
-Job 2: TEST
+- Jenkins Server: 2GB RAM minimum
+- Docker: Installed on Jenkins and deployment servers
+- Ansible: For infrastructure automation
+- GitHub Account: For repository hosting
+- Docker Hub Account: For image registry
 
-Pull Docker image
-Run automated test suite
-Generate test reports
-Fail pipeline if tests fail
-
-Job 3: PROD (Master branch only)
-
-Pull tested Docker image
-Deploy to production server
-Run health checks
-Confirm deployment success
-
-🚦 Prerequisites
-
-Jenkins Server: 2GB RAM minimum
-Docker: Installed on Jenkins and deployment servers
-Ansible: For infrastructure automation
-GitHub Account: For repository hosting
-Docker Hub Account: For image registry
-
-📖 Documentation
+*📖 Documentation*
+---
 
 Installation Guide - Step-by-step setup
 Pipeline Explanation - How it works
