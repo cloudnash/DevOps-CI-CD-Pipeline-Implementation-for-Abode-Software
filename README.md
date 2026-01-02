@@ -5,23 +5,23 @@
 
 **📋 Table of Contents**
 
-a. Project Overview 
+✅ Project Overview 
 
-b. Problem Statement
+✅ Problem Statement
 
-c. Solution Architecture
+✅ Solution Architecture
 
-d. Pipeline Workflow
+✅ Pipeline Workflow
 
-e. Quick Start Guide
+✅ Quick Start Guide
 
-d. Repository Structure
+✅ Repository Structure
 
-e. Technologies Used
+✅ Technologies Used
 
-f. Key Features
+✅ Key Features
 
-g. Results & Impact
+✅ Results & Impact
 
 
 
@@ -42,4 +42,5 @@ As a Senior DevOps Engineer at Abode Software, I implemented a complete CI/CD pi
 
 
 Application Repository: [hshar/website](https://github.com/hshar/website.git)
+
 Container Base Image: hshar/webapp
