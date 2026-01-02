@@ -6,20 +6,20 @@
 
 **📋 Table of Contents**
 
-Project Overview 
+a. Project Overview 
 
-Problem Statement
+b. Problem Statement
 
-Solution Architecture
+c. Solution Architecture
 
-Pipeline Workflow
+d. Pipeline Workflow
 
-Quick Start Guide
+e. Quick Start Guide
 
-Repository Structure
+d. Repository Structure
 
-Technologies Used
+e. Technologies Used
 
-Key Features
+f. Key Features
 
-Results & Impact
+g. Results & Impact
