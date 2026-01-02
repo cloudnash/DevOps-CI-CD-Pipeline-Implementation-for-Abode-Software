@@ -46,3 +46,19 @@ As a Senior DevOps Engineer at Abode Software, I implemented a complete CI/CD pi
 Application Repository: [hshar/website](https://github.com/hshar/website.git)
 
 Container Base Image: hshar/webapp
+
+
+**🚨 Problem Statement**
+---
+
+Abode Software needed to:
+
+ - Reduce manual deployment time and errors
+
+ - Implement automated testing before production
+
+ - Separate development testing from production deployments
+
+ - Containerize the application for environment consistency
+
+ - Automate infrastructure setup
