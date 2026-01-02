@@ -85,3 +85,26 @@ Abode Software needed to:
             └──────────────┘      └──────────────┘
 
 ```
+
+
+**🔄 Pipeline Workflow**
+---
+
+- When Code is Pushed to DEVELOP Branch:
+
+```
+1. GitHub Webhook Triggers Jenkins
+2. Job 1: Build → Checkout code + Build Docker image
+3. Job 2: Test → Run automated tests
+4. ❌ Job 3: SKIP Production deployment
+5. ✅ Pipeline Complete (No prod deployment)
+```
+- When Code is Pushed to MASTER Branch:
+
+```
+1. GitHub Webhook Triggers Jenkins
+2. Job 1: Build → Checkout code + Build Docker image
+3. Job 2: Test → Run automated tests
+4. ✅ Job 3: Deploy to Production
+5. 🎉 Live on Production Server
+```
