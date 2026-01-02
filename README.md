@@ -4,6 +4,7 @@
 
 
 **📋 Table of Contents**
+---
 
 ✅ Project Overview 
 
@@ -27,6 +28,7 @@
 
 
 **🎯Project Overview**
+---
 
 As a Senior DevOps Engineer at Abode Software, I implemented a complete CI/CD pipeline that automates the entire software delivery process. This project demonstrates:
 
