@@ -291,6 +291,13 @@ abode-software-devops-pipeline/
 *📖 Documentation*
 ---
 
-Installation Guide - Step-by-step setup
-Pipeline Explanation - How it works
-Troubleshooting - Common issues
+- Installation Guide - Step-by-step setup
+- Pipeline Explanation - How it works
+- Troubleshooting - Common issues
+
+*📞 Contact*
+---
+
+- GitHub: [@cloudnash](https://github.com/cloudnash)
+- LinkedIn: [Nashit Ahmad](https://in.linkedin.com/in/nashitahmad)
+- Email: nashitakerfeldt@gmail.com
