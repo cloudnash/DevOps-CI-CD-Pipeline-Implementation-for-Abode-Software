@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment {
-        DOCKER_IMAGE = "yourdockerhub/abode-webapp"
+        DOCKER_IMAGE = "nashit836/abode-webapp"
         DOCKER_TAG = "${BUILD_NUMBER}"
         APP_DIR = "/var/www/html"
     }
@@ -39,7 +39,7 @@ pipeline {
         
         stage('3️⃣ Deploy to Production') {
             when {
-                branch 'master'
+                branch 'main'
             }
             steps {
                 echo '🚀 Deploying to Production'
@@ -72,7 +72,7 @@ pipeline {
     post {
         success {
             script {
-                if (env.BRANCH_NAME == 'master') {
+                if (env.BRANCH_NAME == 'main') {
                     echo '🎉 Deployed to PRODUCTION'
                 } else {
                     echo '✅ Tests passed (no deployment)'
